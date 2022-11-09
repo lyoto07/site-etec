@@ -1,0 +1,80 @@
+/* CTRL + clique no seu css */
+@import url(promocao.css);
+@import url(menuNav.css);
+@import url(cardCategoria.css);
+@import url(cardProduto.css);
+@import url(news.css);
+@import url(footer.css);
+@import url(CSSReset.css);
+@import url(introducao.css);
+
+
+/* Não mexer nesse index.css */
+
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+}
+
+.titulo {
+  width: 103px;
+  margin-left: 16px;
+  font-weight: 800;
+  font-size: 20px;
+}
+/* sessão marcas */
+section.marcas .swiper-card {
+  height: 115px;
+  padding-left: 8.5px;
+}
+
+section.marcas .swiper-card .swiper-slide {
+  text-align: center;
+  margin: 10px 8.5px;
+  background-color: #ffffff;
+  width: 72px !important;
+  height: 65px !important;
+  display: flex;
+  border: 1px solid #3A415A;
+  border-radius: 5px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen AND (min-width: 1024px){ 
+  section#Marcas {
+    width: 89%;
+    margin: 0 auto;
+  }
+}
+
+.teste{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+}
+
+
+.teste1{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(140, 30, 30);
+}
+
+
+
+
+.swiper-scrollbar {
+  display: none;
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+} */
+
+/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: -10px !important;
+} */

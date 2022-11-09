@@ -1,0 +1,43 @@
+section.produtos .swiper .swiper-slide {
+    text-align: center;
+    margin: 10px 8.5px;
+    background-color: #ffffff;
+    /* tamanho do card */
+    width: 102px !important;
+    height: 95px !important;
+
+    display: flex;
+    border: 1px solid #3A415A;
+    border-radius: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.produtos .swiper .swiper-slide img {
+    /* tamanho do card */
+    width: 72px !important;
+    height: 65px !important;
+    
+  }
+  .card__not {
+   display: flex;
+  }
+
+  .nome
+  {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+  }
+
+  .preco
+  {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: greenyellow;
+  }
+
+
+  section.section.produtos .swiper.swiper-card.swiper-initialized.swiper-horizontal {
+    height: 240px;
+  }

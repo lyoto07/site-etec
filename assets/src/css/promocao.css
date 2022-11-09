@@ -1,0 +1,25 @@
+
+.container__promocao img{
+    width: 100%;
+    height: 182px;
+
+}
+
+section.marcas .promocao-swiper {
+    height: 145px;
+    padding-left: 8.5px;
+}
+  
+section.marcas .promocao-swiper .swiper-slide {
+    text-align: center;
+    margin: 10px 8.5px;
+    background-color: #ffffff;
+    width: 72px !important;
+    height: 65px !important;
+    display: flex;
+    border: 1px solid #3A415A;
+    border-radius: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
