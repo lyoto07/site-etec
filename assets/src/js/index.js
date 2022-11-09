@@ -1,40 +1,13 @@
 const menuBtn = document.querySelector('#menu');
 const closeBtn = document.querySelector('.closebtn');
 
-
-window.onresize = function () {
-    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (w < 800) {
-        
-        document.getElementById('mySidenav').classList.add('sidenav')
-        menuMobile();
-
-    } if(w> 800) {
-        document.getElementById('mySidenav').classList.remove('sidenav')
-        console.log('nao')
-    // }else{
-    }
-};
-
-
-function menuMobile() {
-    menuBtn.addEventListener('click', function () {
-        openNav();
-    });
-
-    closeBtn.addEventListener('click', function () {
-        closeNav();
-    });
-}
-
-function openNav() {
+menuBtn.addEventListener('click', function () {
     document.getElementById("mySidenav").style.width = "75%";
-
-}
-
-function closeNav() {
+});
+closeBtn.addEventListener('click', function () {
     document.getElementById("mySidenav").style.width = "0";
-}
+});
+
 
 // carrosel
 
