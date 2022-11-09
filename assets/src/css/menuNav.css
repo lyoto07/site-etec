@@ -1,13 +1,72 @@
 /* menu navagação */
-#menu {
-  background-image: url(../img/hamburger.svg);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  width: 100px;
-  height: 50px;
-  margin: 33px 16px;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 118px;
+  background-image: url(../img/blue-cement-wall-free-photo.jpg);
+  color: #ffffff;
+}
+
+.disable{
+  transition: 0.5s;
+  width: 0px;
+}
+.active{
+  transition: 0.5s;
+  width: 75%;
+}
+.lista__nav-menu{
+  position: fixed;
+  box-sizing: border-box;
+  /* border: 1px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: left;  */
+
+  left: 0;
+  height: 100%;
+  z-index: 12;
+  top: 0;
+  background-color: #039DF3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.hamburger {
+  display: block;
 }
   
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger.active{
+  z-index: 100;
+  margin-bottom: 50px;
+  margin-left: 220px;
+  transition: .3s;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -21,11 +80,12 @@
   padding-top: 60px;
 }
 
+
+
 .closebtn {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  display: block;
+  z-index: 10009;
+  position: relative;
+  top: -29px;
 }
 
 .sidenav a:hover {
@@ -48,6 +108,7 @@
   .sidenav a {
     font-size: 18px;
   }
+
 }
 
 .container__nav__menu {
@@ -56,15 +117,6 @@
   padding: 22px 16px 0;
 }
 
-.container__nav__menu__itens {
-  box-sizing: border-box;
-  margin-left: 16px;
-  margin-right: 16px;
-  border: 1px;
-  border-radius: 10px;
-  justify-content: center;
-  text-align: left; 
-}
 
 .container__nav__menu__search {
   display: flex;
@@ -107,7 +159,7 @@
 }
 
 .container__nav__menu_itens_borda {
-  width: 100%;
+  margin: 0 16px;
 }
 
 .container__nav__menu_itens_borda li {
@@ -132,14 +184,14 @@ a:visited {
   color: #FFFFFF;
 }
 
-.container__header {
+/* .container__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 118px;
   background-image: url(../img/blue-cement-wall-free-photo.jpg);
   color: #ffffff;
-}
+} */
 
 .container__logo img {
   width: 60px;
@@ -149,8 +201,8 @@ a:visited {
 
 
 /* nav header */
-@media screen AND (min-width: 1024px){ 
-    #menu, .sidenav, .closebtn{
+@media screen AND (min-width: 747px){ 
+    .hamburger, .sidenav, .closebtn{
       display: none;
     }
 }

@@ -42,6 +42,13 @@ section.marcas .swiper-card .swiper-slide {
   align-items: center;
   justify-content: center;
 }
+ section.categorias__container, section.produtos__container, section.novidades{
+  display: flex;
+  height: 300px;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
 
 @media screen AND (min-width: 1024px){ 
   section#Marcas {
@@ -51,14 +58,14 @@ section.marcas .swiper-card .swiper-slide {
 }
 
 .teste{
-  height: 100px;
+  height: 200px;
   width: 100%;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(0, 0, 0);
 }
 
 
 .teste1{
-  height: 100px;
+  height: 200px;
   width: 100%;
   background-color: rgb(140, 30, 30);
 }

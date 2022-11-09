@@ -1,16 +1,41 @@
 const menuBtn = document.querySelector('#menu');
-const closeBtn = document.querySelector('.closebtn');
+// const navMenu = document.querySelector('.navbar');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.lista__nav-menu');
 
-menuBtn.addEventListener('click', function () {
-    document.getElementById("mySidenav").style.width = "75%";
+hamburger.addEventListener('click', function () {
+    if(temClasse() === false){
+        openbtn();
+    }else{
+        closebtn();
+    }
+
 });
-closeBtn.addEventListener('click', function () {
-    document.getElementById("mySidenav").style.width = "0";
-});
+
+function temClasse(){
+    return hamburger.classList.contains('active');
+}
+function openbtn(){
+    navMenu.classList.remove('disable');
+    hamburger.classList.toggle('active');
+    navMenu.classList.add('active');
+}
+
+function closebtn(){
+    navMenu.classList.add('disable');
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}
+// document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', function() {
+//    console.log('ioi')
+    // navMenu.classList.add('disable');
+    // menuBtn.classList.remove('active');
+    // navMenu.classList.remove('active');
+    // document.getElementById("mySidenav").style.display = "0px";
+// }));
 
 
 // carrosel
-
 const swiper = new Swiper('.swiper-card', {
     slidesPerView: "auto",
     observer: true,
