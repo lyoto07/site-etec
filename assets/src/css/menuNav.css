@@ -1,54 +1,54 @@
 /* menu navagação */
 #menu {
-    background-image: url(../img/hamburger.svg);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    width: 100%;
-    height: 21px;
-    margin: 33px 16px;
-  }
+  background-image: url(../img/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 100px;
+  height: 50px;
+  margin: 33px 16px;
+}
   
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background-color: #039DF3;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.closebtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
   .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 12;
-    top: 0;
-    left: 0;
-    background-color: #039DF3;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 15px;
   }
-  
-  .closebtn {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
+
+  .sidenav a {
+    font-size: 18px;
   }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 6px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-  
-    .sidenav a {
-      font-size: 18px;
-    }
-  }
+}
 
 .container__nav__menu {
   width: 170px;
