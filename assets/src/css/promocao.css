@@ -1,7 +1,7 @@
 
 .container__promocao img{
-    width: 100%;
-    height: 182px;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -22,4 +22,13 @@ section.marcas .promocao-swiper .swiper-slide {
     align-content: center;
     align-items: center;
     justify-content: center;
+}
+
+@media screen AND (min-width: 1024px){
+
+    .container__promocao img{
+        max-width: 100%;
+        height: auto;
+
+    }
 }

@@ -50,6 +50,7 @@ const swiper = new Swiper('.swiper-card', {
 });
 
 const swiper1 = new Swiper('.promocao-swiper', {
+    
     slidesPerView: "auto",
     autoplay: {
         delay: 2000,
