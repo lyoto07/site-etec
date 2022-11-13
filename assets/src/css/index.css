@@ -55,6 +55,13 @@ section.marcas .swiper-card .swiper-slide {
     width: 89%;
     margin: 0 auto;
   }
+  .container__promocao img {
+    width: 100%;
+    height: 340px;
+  }
+  .teste,.teste1{
+    height: 100%;
+  }
 }
 
 .teste{
