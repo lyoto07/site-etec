@@ -216,7 +216,18 @@ a:visited {
     margin: 0;
   } 
 
+  li.nav-item a{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+  }
 
+  li.nav-item a:hover{
+    color: #00afaf;
+    font-size: 18px;
+    transition: 0.5s;
+
+  }
   li.nav-item.container__nav__menu__search {
     width: 100%;
   }
@@ -238,6 +249,7 @@ a:visited {
   }
   .img-desktop img {
     width: 100%;
+    margin-top: 10px;
     border-radius: 50%;
     margin-right: 0;
   }

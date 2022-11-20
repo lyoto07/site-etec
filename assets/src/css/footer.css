@@ -56,8 +56,9 @@
 
 /* desktop */
 @media screen AND (min-width: 1024px){ 
-  .footer__itens{
+  .footer__itens {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .footer__a {

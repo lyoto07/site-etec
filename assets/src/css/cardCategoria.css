@@ -13,11 +13,21 @@
 }
 
 
+.img__categoria img{
+  width: 65%;
+}
+
+.titulo_categoria{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 section.categorias__container .swiper .swiper-slide {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  align-items: flex-end;
+  align-items: center;
   text-align: center;
   width: 167px !important;
   height: 188px !important;
@@ -49,4 +59,5 @@ section.categorias__container .swiper.swiper-card.swiper-initialized.swiper-hori
   section.categorias__container .swiper.swiper-card.swiper-initialized.swiper-horizontal{
     height: 245px;
   }
+
 }

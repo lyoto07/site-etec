@@ -63,6 +63,9 @@
     .container__footer__news {
         width: 50%;
     }
+    section.novidades{
+        align-items: center;
+    }
     
 }
 
